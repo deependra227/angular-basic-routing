@@ -1,0 +1,6 @@
+<h1 style="text-align: center;">Cat Facts</h1>
+<ul>
+  <li *ngFor="let fact of facts">
+    <app-card [fact]='fact.text'></app-card>
+  </li>
+</ul>

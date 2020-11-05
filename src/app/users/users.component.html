@@ -1,0 +1,91 @@
+<h1 style="text-align: center;">Random User Generator</h1>
+<div class="container bootstrap snippets bootdey">
+  <div class="panel-body inf-content">
+    <div class="row">
+      <div class="col-md-4" style="text-align: center;">
+        <img alt="" style="width:250px;" title="" class="img-circle img-thumbnail isTooltip"
+          [src]='details.picture.medium' data-original-title="Usuario">
+
+      </div>
+      <div class="col-md-6">
+        <strong>Information</strong><br>
+        <div class="table-responsive">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <td>
+                  <strong>
+                    <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                    Name
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.name.title}} {{details.name.first}} {{details.name.last}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>
+                    <span class="glyphicon glyphicon-user  text-primary"></span>
+                    Gender
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.gender}}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>
+                    <span class="glyphicon glyphicon-bookmark text-primary"></span>
+                    Username
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.login.username}}
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  <strong>
+                    <span class="glyphicon glyphicon-envelope text-primary"></span>
+                    Email
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.email}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>
+                    <span class=" glyphicon glyphicon-home text-primary"></span>
+                    City
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.location.city}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>
+                    <span class="glyphicon glyphicon-calendar text-primary"></span>
+                    D.O.B.
+                  </strong>
+                </td>
+                <td class="text-primary">
+                  {{details.dob.date}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
